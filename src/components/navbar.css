@@ -1,0 +1,139 @@
+.navbar{
+  background: linear-gradient(90deg, rgb(214, 40, 40) 20%, black 100%);
+  height: 80px;
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 55;
+}
+.navbar-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  max-width: 1650px;
+}
+.navbar-logo{
+  color: white;
+  justify-self: start;
+  margin-left: 20px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+}
+.navmenu{
+  display: flex;
+  position: absolute;
+  height: 80px;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  right: 0;
+}
+.flogo{
+  margin-left: 10px;
+}
+
+.navlink {
+  position: relative;
+  margin: 10px 20px;
+  text-decoration: none;
+  display: flex;
+  color: black;
+  justify-self: flex-end;
+  padding: 12px 20px;
+  background: white;
+  border-radius: 8px;
+}
+.navlink:hover{
+  transition: all .3s ease;
+  background-color: black;
+  color: white;
+}
+.menu-icon{
+  font-size: 1.8em;
+  display: none;
+}
+
+@media screen and (max-width:960px){
+  .navbar{
+      position: sticky;
+  }
+  .navmenu{
+      /* display: flex; */
+      display: none;
+      flex-direction: column;
+      width: 50%;
+      height: 40vh;
+      position: absolute;
+      top: 80px;
+      right: -100%;
+      /* left: -100%; */
+      opacity: 1;
+      transition: all .5s ease-out;
+      
+      /* border: 2px solid yellow; */
+  }
+  .navmenu.active{
+      display: flex;
+      /* background-color: black; */
+      /* left: 0; */
+      right: 0;
+      opacity: 1;
+      width: 40%;
+      top: 80px;
+      list-style: none;
+      z-index: 1;
+      transition: all .5s ease-out;
+      /* border: 2px solid yellow; */
+      
+    }
+    .nav-item{
+    /* border: 2px solid red; */
+      width: 100%;
+      height: 100%;
+  }
+  .navlink{
+      position: relative;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+      padding: 0;
+      display: table;
+     width: 100%;
+     height: 90%;
+      /* border: 2px solid yellow; */
+      margin: 0;
+      background-color: black;
+      color: white;
+  }
+  
+  .navlink:hover{
+    transition: all .3s ease;
+    
+    /* width: 100%;  */
+  }
+  
+  .navbar-logo{
+      position:absolute;
+      top: 0;
+      left: 0;
+      transform: translate(0, 45%);
+  }
+  .menu-icon{
+      display: block;
+      position: absolute;
+      top:0;
+      right: 0;
+      color: white;
+      transform: translate(-110%, 45%);
+      font-size: 2rem;
+      cursor: pointer;
+  }
+  
+
+}

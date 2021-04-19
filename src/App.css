@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'PT Sans', sans-serif;
+}
+
+.home,
+.Services,
+.Products,
+.SignUp,
+.AboutUS {
+  display: flex;
+  height: 90vh;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+}
+/* here we are saving the images in src folder so to access the images from css we need to save in src folder */
+.Services {
+  background-image: url('./images/img-2.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-size: 100px;
+}
+
+.Products {
+  background-image: url('./images/img-1.jpg');
+  background-position: center;
+  background-size: fill;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-size: 100px;
+}
+
+.SignUp {
+  background-image: url('./images/img-8.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-size: 100px;
+}
+.AboutUS{
+  background-image: url('./images/img-7.jpg');
+  background-position: center;
+  background-size:cover;
+  background-repeat:no-repeat;
+  color:#fff;
+  font-size: 100px;
+}
